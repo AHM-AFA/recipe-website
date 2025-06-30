@@ -1,0 +1,589 @@
+body, head, html{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+*{
+    font-family: 'Dance Script', cursive;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar{ 
+    display: flex;
+    align-items: center;
+    height: 12vb;
+}
+.logo, .directories, .menu{
+    width: 100%;
+    text-align: center;
+}
+.directories{
+    display: flex;
+}
+.logo a{
+    transition: transform 0.2 ease;
+}
+.logo a:hover{
+    transform: translate(4px);
+}
+.directories a{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.directories a:hover{
+    background-color: #EFD8B2;
+    color: white;
+    transform: translate(4px);
+}
+.background {
+    height: 200vb;
+    width: 100%;
+    background: url("../Images/pexels-jeshoots-230743.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center; 
+}
+.homePage{
+    text-align: center;
+    margin-top: 2vi;
+    width: 60vi;
+    background-color: white;
+}
+.welcome{
+    height: 20%;
+    width: 100%;
+    background: url("../Images/download.jpeg") center/cover no-repeat;
+    color: 	#EFD8B2;
+    font-weight: bold;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.welcome a{
+    text-decoration: none;
+    color: #fff1d8;
+}
+.welcome a:hover{
+    cursor: pointer;
+    color: rgb(240, 210, 156);
+}
+.logo-image {
+    height: 12vb;
+    width: 12vb;
+    border-radius: 60px;
+}
+.aboutUs{
+    text-align: right;
+    font-size: 1.1rem;
+    margin-left: 2vb;
+    margin-right: 2vb;
+}
+.about-us{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: #fff9f1;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0,0,0, 0.1);
+}
+.aboutUsLogo{
+    max-width: 25vb;
+    height: auto;
+    margin-right: 2vb;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0,0,0, 0.1);
+    object-fit: cover;
+}
+.latestRecipies{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    box-sizing: border-box;
+}
+.latestRecipies div{
+    width: 100%;
+    text-align: left;
+    margin: 5vi; 
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0, 0.1);
+    height: auto;
+}
+.latestRecipies div img{
+    object-fit: cover;
+    width: 100%;
+    height: 65%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.latestRecipies div h4{
+    padding: 0vb 2vb 10vb 2vb;
+    font-size: 70%;
+}
+.latestRecipies div h6{
+    padding: 0vb 0vb 0vb 2vb;
+    color: silver;
+}
+.latestRecipies div a{
+    text-decoration: underline;
+}
+.latestRecipies div a:hover{
+    cursor: pointer;
+    color: darkblue;
+}
+.pop-out{
+    height: fit-content;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pop-out:hover{
+    transform: scale(1.25) !important;
+    box-shadow: 10px 10px 40px rgba(4, 0, 255, 0.253) !important;
+}
+.fa {
+    color: black;
+    width: 5vb;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.5;
+}
+.activated{
+    background-color: #EFD8B2;
+}
+.activated:hover{
+    cursor: default;
+}
+.recipies{
+    text-align: center;
+    margin-top: 2vi;
+    width: 90vi;
+    background-color: white;
+    display: flex;
+    overflow-wrap: anywhere;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recipie {
+    margin: 5vb;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0, 0.1);
+    height: fit-content;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.recipie h4{
+    padding: 5vb;
+    color: black;
+    text-decoration: none;
+}
+.recipie h6{
+    color: silver;
+    text-align: left;
+    padding-left: 1vb;
+}
+.recipie h4:hover{
+    cursor: pointer;
+    color: darkblue;
+}
+.recipies img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.recipie:hover{
+    transform: scale(1.25) !important;
+    box-shadow: 10px 10px 40px rgba(4, 0, 255, 0.253) !important;
+}
+.contact {
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+    margin-top: 2vi;
+    height: fit-content;
+    text-align: center;
+    justify-items: center;
+    flex-direction: column;
+
+}
+.contact-form{
+    justify-content: right;
+    text-align: right;
+    height: fit-content;
+    margin-top: 5vb;
+    width: 90%;
+    background-color: #fff9f1;
+    display: flex;
+    justify-items: right;
+    flex-direction: column;
+    padding-top: 4vb;
+    padding-bottom: 4vb;
+    border-radius: 10px;
+    margin-bottom: 5vb;
+}
+.contact-form label, .contact-form input, .contact-form textarea{
+    margin-left: 2vb;
+    margin-right: 2vb;
+    font-size: larger;
+}
+.contact-form input, .contact-form textarea{
+    border-radius: 10px;
+    background-color: #fff4e7 ;
+    border-color: #e6b66a;
+}
+.contact-form button{
+    margin-top: 2vb;
+    background-color: #f5cd9d;
+    width: fit-content;
+    margin-left: 2vb;
+    color: white;
+    padding-left: 1vb;
+    padding-right: 1vb;
+    border-radius: 10px;
+    border-color: #e6b66a;
+}
+.contact-form button:hover{
+    opacity: 0.7 !important;
+    cursor: pointer !important;
+}
+.contact-socials{
+    margin-bottom: 5vb;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    background-color: white;
+    margin-top: 2vi;
+}
+.about-me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff9f1;
+    text-align: right;
+    border-radius: 20px;
+}
+.about-me img{
+    margin-top: 2vi;
+}
+.aboutme-text{
+    margin-left: 2vb;
+    margin-right: 2vb;
+}
+.posts {
+    margin-top: 2vi;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    height: fit-content;
+}
+.post{
+    text-align: right;
+    width: 100%;
+    border-bottom: black 1px solid;
+    background-color: gray;
+}
+.post *, .steps *, .footer h1{
+    margin-left: 2vi;
+    margin-right: 2vi;
+}
+.post h5{
+    text-align: left;
+    color: silver;
+}
+.recipie-description{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin-top: 2vi;
+    background-color: white;
+    height: fit-content;
+    align-items: center;
+}
+.recipie-img-desc{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.recipie-img-desc p{
+    margin-top: 0;
+    font-size: medium;
+}
+.recipie-img-desc img, .video{
+    width: 40vi;
+    height: 30vi;
+    object-fit: cover;
+}
+.recipie-description h1{
+    text-align: right;
+    justify-content: right;
+}
+.steps{
+    justify-content: right;
+    text-align: right;
+    width: 100%;
+}
+.recipie-description .video{
+    margin-top: 5vb;
+}
+.footer {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+}
+.copyright{
+    text-decoration: none;
+    color: white;
+}
+.copyright:hover{
+    color: grey;
+    cursor: pointer;
+}
+.post-desc{
+    margin-top: 2vi;
+    width: 60%;
+    background-color: white;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-desc img{
+    width: 30vi;
+    height: 20vi;
+    object-fit: contain;
+}
+.postText{
+    margin-top: 2vi;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 5vi;
+}
+.postText h3{
+    margin-right: 2vb;
+    margin-left: 2vb;
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-form{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: silver;
+    padding: 5vb 5vb 5vb 5vb;
+    box-shadow: 0px 4px 20px rgba(0,0,0, 0.1);
+    align-items: center;
+    background-image: url("../Images/pngtree-baking-background-flat-style-picture-image_1303866.jpg");
+}
+.login-form input{
+    margin: 1vb 0vb 1vb 0vb;
+}
+.logo-login{
+    margin-bottom: 2vb;
+    height: 12vi;
+    width: 12vi;
+    border-radius: 60px;
+    object-fit: contain;
+}
+.login-form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.login-form input[type=submit]{
+    background-color: #ebe3d9;
+    border-width: 0.5px;
+}
+.login-form input[type=submit]:hover{
+    background-color: #cfc6bb;
+    cursor: pointer;
+}
+.admin{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vh;
+}
+.makeRecipie, .makePost{
+    width: 20%;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0,0,0, 0.1);
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.makeRecipie{
+    margin-left: 5vi;
+}
+.makePost{
+    margin-right: 5vi;
+}
+.makePost p, .makeRecipie p{
+    font-size: 90%;
+    font-weight: bold;
+}
+.makeRecipie button, .makePost button{
+    margin-bottom: 2vb;
+    font-size: 90%;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: green;
+    padding: 1vi 3vi 1vi 3vi;
+}
+.makeRecipie button:hover, .makePost button:hover{
+    background-color: rgb(0, 150, 0);
+    cursor: pointer;
+}
+.material-icons{
+    margin-top: 1vh;
+    font-size: 5vi !important;
+}
+.logo-admin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo-admin img{
+    border-radius: 200px;
+    width: 30%;
+    height: 100%;
+}
+.admin2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.postcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fdfaf6;
+}
+
+.createPost {
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+  padding: 3vh 4vh;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
+
+.createPost h1 {
+  text-align: center;
+  margin-bottom: 2vh;
+  color: #333;
+}
+
+.createPost form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.createPost form label {
+  font-weight: bold;
+  margin-bottom: 0.5vh;
+  color: #5a5a5a;
+}
+
+.createPost form input[type="text"],
+.createPost form input[type="file"],
+.createPost form textarea {
+  padding: 1vh;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fffdf9;
+}
+
+.createPost form textarea {
+  resize: vertical;
+  min-height: 120px;
+  text-align: right;
+}
+
+.createPost form button[type="submit"] {
+  background-color: #f2c084;
+  color: white;
+  border: none;
+  padding: 1vh 2vh;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.createPost form button[type="submit"]:hover {
+  background-color: #e0ac60;
+}
+
+.createPost .title-post,
+.createPost .contents,
+.createPost .images-post {
+  display: flex;
+  flex-direction: column;
+}
+.postcontent2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #fdfaf6;
+}
+.Center{
+    display: flex;
+    justify-content: left;
+}
+.Center button{
+    background-color: #f2c084;
+    color: white;
+    border: none;
+    padding: 1vh 2vh;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.Center button:hover{
+    background-color: #e0ac60;
+}
