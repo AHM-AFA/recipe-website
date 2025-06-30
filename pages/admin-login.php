@@ -26,7 +26,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Statics/style.css">
+    <link rel="stylesheet" href="../Statics/style.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Login</title>
@@ -35,7 +35,7 @@
     <div class="login">
         
         <form method="POST" action="admin-login.php" class="login-form">
-            <img src="Images/WhatsApp Image 2025-05-12 at 14.07.22_4641ef17.jpg" class="logo-login">
+            <img src="../Images/WhatsApp Image 2025-05-12 at 14.07.22_4641ef17.jpg" class="logo-login">
             <div>
                 <label>
                     Username:
@@ -50,6 +50,6 @@
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="Statics/script.js"></script>
+    <script src="../Statics/script.js"></script>
 </body>
 </html>
